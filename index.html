@@ -83,8 +83,26 @@
             }
         }
     </style>
+        <script>
+            document.addEventListener('DOMContentLoaded', () => {
+                const items = document.querySelectorAll('.item');
+    
+                items.forEach(item => {
+                    let currentIndex = 0;
+                    const images = item.dataset.images.split(',');
+                    const imgElement = item.querySelector('img');
+    
+                    setInterval(() => {
+                        currentIndex = (currentIndex + 1) % images.length;
+                        imgElement.src = images[currentIndex];
+                    }, 3000);
+                });
+            });
+        </script>
 </head>
+
 <body>
+
     <header>
         <h1>Apollo 11 Information</h1>
     </header>
@@ -100,27 +118,27 @@
         </section>
 
         <section class="items">
-            <div class="item">
-                <img src="https://via.placeholder.com/300" alt="Item 1">
+            <div class="item" data-images="/Final Shots/Command Center/Suit-Camera.png,/Final shots/Command Center/Suit-Camera 2.png,/Final shots/Command Center/Suit-Camera 3.png">
+                <img src="/Final shots/Command Center/Suit-Camera.png" alt="Command Center">
                 <div class="item-description">
-                    <h3>Item 1</h3>
-                    <p>Description of item 1.</p>
+                    <h3>Command Center</h3>
+                    <p>Description of Command Center item.</p>
                 </div>
             </div>
 
-            <div class="item">
-                <img src="https://via.placeholder.com/300" alt="Item 2">
+            <div class="item" data-images="/Final shots/Gloves/Glove1-Camera.png,/Final shots/Gloves/Glove1-Camera 2.png,/Final shots/Gloves/Glove1-Camera 3.png">
+                <img src="/Final shots/Gloves/Glove1-Camera.png" alt="Gloves">
                 <div class="item-description">
-                    <h3>Item 2</h3>
-                    <p>Description of item 2.</p>
+                    <h3>Gloves</h3>
+                    <p>Description of Gloves item.</p>
                 </div>
             </div>
 
-            <div class="item">
-                <img src="https://via.placeholder.com/300" alt="Item 3">
+            <div class="item" data-images="/Final shots/Suit/Suit-Camera.png,/Final shots/Suit/Suit-Camera 2.png,/Final shots/Suit/Suit-Camera 3.png">
+                <img src="/Final shots/Suit/Suit-Camera.png" alt="Suit">
                 <div class="item-description">
-                    <h3>Item 3</h3>
-                    <p>Description of item 3.</p>
+                    <h3>Suit</h3>
+                    <p>Description of Suit item.</p>
                 </div>
             </div>
         </section>

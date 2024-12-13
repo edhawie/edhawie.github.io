@@ -20,11 +20,13 @@
         }
 
         .hero {
-            background: url('https://via.placeholder.com/1920x500') no-repeat center center/cover;
+            background: url('Final Shots/apollo11.jpg') no-repeat center center/cover;
             height: 300px;
             display: flex;
             justify-content: center;
             align-items: center;
+            text-align: center;
+            text-shadow: 2px 2px 5px black;
             color: white;
             font-size: 2em;
         }
@@ -81,6 +83,38 @@
                 flex-direction: column;
                 align-items: center;
             }
+
+            .item {
+                max-width: 90%;
+            }
+        }
+
+        @media (max-width: 480px) {
+            header {
+                font-size: 1em;
+                padding: 0.5em;
+            }
+
+            .hero {
+                font-size: 1em;
+                height: 150px;
+                text-align: center;
+                padding: 10px;
+            }
+
+            .item {
+                max-width: 100%;
+                box-shadow: none;
+            }
+
+            .item-description {
+                padding: 5px;
+            }
+
+            footer {
+                font-size: 0.8em;
+                padding: 5px;
+            }
         }
     </style>
         <script>
@@ -118,27 +152,27 @@
         </section>
 
         <section class="items">
-            <div class="item" data-images="/Final Shots/Command Center/Suit-Camera.png,/Final shots/Command Center/Suit-Camera 2.png,/Final shots/Command Center/Suit-Camera 3.png">
-                <img src="/Final shots/Command Center/Suit-Camera.png" alt="Command Center">
+            <div class="item" data-images="Final Shots/Command Center/Suit-Camera.png,Final shots/Command Center/Suit-Camera 2.png,Final shots/Command Center/Suit-Camera 3.png">
+                <img src="Final shots/Command Center/Suit-Camera.png" alt="Command Center">
                 <div class="item-description">
                     <h3>Command Center</h3>
-                    <p>Description of Command Center item.</p>
+                    <p>The command module, named Columbia, was the only part of the Apollo 11 spacecraft to return to Earth. It served as the living quarters for the three astronauts — Neil Armstrong, Buzz Aldrin, and Michael Collins — for most of the mission. While Armstrong and Aldrin descended to the lunar surface in the Lunar Module Eagle, Collins remained in the Columbia, orbiting the Moon and maintaining communication with both the crew on the surface and Mission Control on Earth.</p>
                 </div>
             </div>
 
-            <div class="item" data-images="/Final shots/Gloves/Glove1-Camera.png,/Final shots/Gloves/Glove1-Camera 2.png,/Final shots/Gloves/Glove1-Camera 3.png">
-                <img src="/Final shots/Gloves/Glove1-Camera.png" alt="Gloves">
+            <div class="item" data-images="Final shots/Gloves/Glove1-Camera.png,Final shots/Gloves/Glove1-Camera 2.png,Final shots/Gloves/Glove1-Camera 3.png">
+                <img src="Final shots/Gloves/Glove1-Camera.png" alt="Gloves">
                 <div class="item-description">
                     <h3>Gloves</h3>
-                    <p>Description of Gloves item.</p>
+                    <p>The A7-L spacesuit worn by Neil Armstrong during the Apollo 11 mission had two types of gloves: intravehicular (IV) gloves for use inside the spacecraft and extravehicular (EV) gloves for use on the lunar surface. The EV gloves were critically important for enabling Armstrong to perform tasks on the Moon and were designed with specific features to protect him from the harsh lunar environment.</p>
                 </div>
             </div>
 
-            <div class="item" data-images="/Final shots/Suit/Suit-Camera.png,/Final shots/Suit/Suit-Camera 2.png,/Final shots/Suit/Suit-Camera 3.png">
-                <img src="/Final shots/Suit/Suit-Camera.png" alt="Suit">
+            <div class="item" data-images="Final shots/Suit/Suit-Camera.png,Final shots/Suit/Suit-Camera 2.png,Final shots/Suit/Suit-Camera 3.png">
+                <img src="Final shots/Suit/Suit-Camera.png" alt="Suit">
                 <div class="item-description">
                     <h3>Suit</h3>
-                    <p>Description of Suit item.</p>
+                    <p>The Neil Armstrong spacesuit, designated A7-L, was a marvel of engineering designed to provide a life-sustaining environment for the astronaut during lunar exploration. It consisted of multiple layers and components carefully integrated to protect Armstrong from the harsh conditions of the lunar surface.</p>
                 </div>
             </div>
         </section>
@@ -153,7 +187,7 @@
     </div>
 
     <footer>
-        <p>&copy; 2024 Mini Website. All Rights Reserved.</p>
+        <p>&copy; 2024 Edhawie Website. All Rights Reserved.</p>
     </footer>
 </body>
 </html>
